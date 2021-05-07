@@ -1,0 +1,11 @@
+CREATE DATABASE organograna;
+USE organograna;
+
+CREATE TABLE receitas (
+	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    renda VARCHAR(64) DEFAULT NULL,
+    valor DECIMAL(15,2) DEFAULT 0.00,
+    data_recebimento DATE DEFAULT NULL,
+    created_at TIMESTAMP DEFAULT NULL,
+    updated_at TIMESTAMP DEFAULT NULL
+);
